@@ -23,10 +23,10 @@ Answer for Question #1:
 
  * Make a data frame and matrix in R from the information below:
 
- ** horse_breeds 'Quarter horse', 'Thoroughbred', 'Haflinger'
- ** height_cm 163, 173, 150
- ** weight_kg 540, 590, 585
- ** price_dollars 4000, 90000, 5000
+   - horse_breeds 'Quarter horse', 'Thoroughbred', 'Haflinger'
+   - height_cm 163, 173, 150
+   - weight_kg 540, 590, 585
+   - price_dollars 4000, 90000, 5000
 
 **Answer:** 
  horse_breeds <- c('Quarter horse', 'Thoroughbred', 'Haflinger')
@@ -38,16 +38,23 @@ Answer for Question #1:
  horse.matrix <- matrix(horse_breeds, height_cm, weight_kg, price_dollars)
 
  * Answer the following questions about the data frame you made from the info above:
- ** Do you use a different command to make a data frame from scratch vs creating a data frame using mtcars?
+  
+   - Do you use a different command to make a data frame from scratch vs creating a data frame using mtcars?
 
 **Answer:** Yes, when making your own matrix or data frame from scratch you use: data.frame() or matrix(), but when using an existing data set use as.data.frame() or as.matrix()
 
- ** Answer the questions from the first two bullet points using the data frame and matrix above using a column of your choice.
+   - Answer the questions from the first two bullet points using the data frame and matrix above using a column of your choice.
 
 **Answer:** horse.data['height_cm']
 **Answer:** horse.matrix[,'height_cm']
 
 **Answer:** horse.data[,'height_cm'], horse.data$height_cm, horse.data[['height_cm']]
 
+## Question #3: Professor Max would like to share a data file with his students from an undergraduate course he teaches. However, he does not want to share all the files in this directory because he also keeps the exam keys for the class in the same directory. This data file is called past_student_scores.txt and it is in the directory D107L_exam_scores (permissions drwx------), which is located in his home directory. How could he give access to the past_student_scores.txt (permissions -rwx------) file withought allowing students to access the other sensitive files in the D107L_exam_scores directory?
 
+**Answer:** I am going to assume the students in his undergrad class are not placed in a group, so would be considered others. In order to do the permissions properly, the directory needs to executable to other, but deny read access to the direcotry to other. The file itself also has to have read permissions for other.  By denying read access to the directory, the students would not be able to see what else was in the older.  However, this means they have to have the specific filepath for the past_student_scores.txt file beforehand.  To do permissions in this way, Professor Max would need to do the following commands: 
 
+chmod o+x D107L_exam_scores (new permissions drwx-----x)
+chmod o+r past_student_scores.txt (new permissions -rwx---r--)
+ 
+ 
