@@ -1,6 +1,6 @@
 # Homework #2 Answer key
 
-## Question #1: Question #1: Write a script that makes a directory within another directory.  The first directory should be called Disneyland and the directory within Disneyland should be called StarWars (Note: you should make both directories from your home directory, do not change directories into the Disneyland directory to make the StarWars directory). After you have made both the Disneyland and the StarWars directories, change directories into the Disneyland directory and remove the StarWars directory. Your answer should include the commands you used to make the directories, enter into the Disneyland directory, and remove the StarWars directory.
+## Question #1: Write a script that makes a directory within another directory.  The first directory should be called Disneyland and the directory within Disneyland should be called StarWars (Note: you should make both directories from your home directory, do not change directories into the Disneyland directory to make the StarWars directory). After you have made both the Disneyland and the StarWars directories, change directories into the Disneyland directory and remove the StarWars directory. Your answer should include the commands you used to make the directories, enter into the Disneyland directory, and remove the StarWars directory.
 
 Answer for Question #1: 
 
