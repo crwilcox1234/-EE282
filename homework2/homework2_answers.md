@@ -30,8 +30,11 @@ Answer for Question #1:
 
 **Answer:** 
  horse_breeds <- c('Quarter horse', 'Thoroughbred', 'Haflinger')
+ 
  height_cm <- c(163, 173, 150)
+ 
  weight_kg <- c(540, 590, 585)
+ 
  price_dollars <- c(4000, 90000, 5000)
 
  horse.data <- data.frame(horse_breeds, height_cm, weight_kg, price_dollars)
@@ -46,6 +49,7 @@ Answer for Question #1:
    - Answer the questions from the first two bullet points using the data frame and matrix above using a column of your choice.
 
 **Answer:** horse.data['height_cm']
+
 **Answer:** horse.matrix[,'height_cm']
 
 **Answer:** horse.data[,'height_cm'], horse.data$height_cm, horse.data[['height_cm']]
@@ -55,6 +59,7 @@ Answer for Question #1:
 **Answer:** I am going to assume the students in his undergrad class are not placed in a group, so would be considered others. In order to do the permissions properly, the directory needs to executable to other, but deny read access to the direcotry to other. The file itself also has to have read permissions for other.  By denying read access to the directory, the students would not be able to see what else was in the older.  However, this means they have to have the specific filepath for the past_student_scores.txt file beforehand.  To do permissions in this way, Professor Max would need to do the following commands: 
 
 chmod o+x D107L_exam_scores (new permissions drwx-----x)
+
 chmod o+r past_student_scores.txt (new permissions -rwx---r--)
  
  
