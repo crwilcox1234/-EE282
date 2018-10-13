@@ -36,6 +36,6 @@ Question #2: Data frames vs matrices in R. To answer this question use the R bui
 Hint 1: in order to view a file, all of its parent directories must be executable
 Hint 2: in order to view a file, the file itself must be readable
 
-Question #3: Professor Max would like to share a data file with his students from an undergraduate course he teaches. However, he does not want to share all the files in this directory because he also keeps the exam keys for the class in the same directory. This data file is called past_student_scores.txt and it is in the directory D107L_exam_scores, which is located in his home directory. How could he give access to the past_student_scores.txt file withought allowing students to access the other sensitive files in the D107L_exam_scores directory?
+Question #3: Professor Max would like to share a data file with his students from an undergraduate course he teaches. However, he does not want to share all the files in this directory because he also keeps the exam keys for the class in the same directory. This data file is called past_student_scores.txt and it is in the directory D107L_exam_scores (permissions drwx------), which is located in his home directory. How could he give access to the past_student_scores.txt file (permissions -rwx------) withought allowing students to access the other sensitive files in the D107L_exam_scores directory?
 
     
