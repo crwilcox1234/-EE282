@@ -25,6 +25,7 @@ Question #2: Data frames vs matrices in R. To answer this question use the R bui
    - price_dollars 4000, 90000, 5000
 
  * Answer the following questions about the data frame you made from the info above:
+   
    -Do you use a different command to make a data frame from scratch vs creating a data frame using mtcars?
    -Answer the questions from the first two bullet points using the data frame and matrix above using a column of your choise.
 
