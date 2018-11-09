@@ -8,6 +8,9 @@ Answer for Question #1:
     cd Disneyland
     rmdir StarWars
 
+### Question 1 Comments:
+Very well done!
+
 ## Question #2: Data frames vs matrices in R. To answer this question use the R built-in data set mtcars. Make a data frame called car_gears and a matrix called car_matrix. Using your new data frame and matrix answer the following questions.
  
 **Answer:** car_gears <- as.data.frame(mtcars), car_matrix <- as.matrix(mtcars)
@@ -61,5 +64,18 @@ Answer for Question #1:
 chmod o+x D107L_exam_scores (new permissions drwx-----x)
 
 chmod o+r past_student_scores.txt (new permissions -rwx---r--)
+
+### Question 3 Comments:
+In this example, you are right that they would need read access to the folder, but commands to not appear to be correct. The directory itself would need to be readable by all users, or else the students will not have access to any contents inside the directory. o+x only gives execute access to the users for that directory. so you would need to do:
+
+```
+chmod +r D107L_exam_scores
+cd D107L_exam_scores
+chmod o-r *
+chmod +r past_student_scores.txt
+```
+
+I hope this helps in the future when you need to share files with collaborators. You definetly understood what needed to be done, but unfortunatley the commands would have not been able to acheive your objective.
+
  
  
