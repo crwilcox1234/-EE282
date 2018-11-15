@@ -57,7 +57,7 @@ Very well done!
 
 **Answer:** horse.data[,'height_cm'], horse.data$height_cm, horse.data[['height_cm']]
 
-### Question 1 Comments:
+### Question 2 Comments:
 Well done. You can use [code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) a bit more liberally to make your examples easier to read, copy, and paste. You did this in #1 and #2, so no big deal.
 
 ## Question #3: Professor Max would like to share a data file with his students from an undergraduate course he teaches. However, he does not want to share all the files in this directory because he also keeps the exam keys for the class in the same directory. This data file is called past_student_scores.txt and it is in the directory D107L_exam_scores (permissions drwx------), which is located in his home directory. How could he give access to the past_student_scores.txt (permissions -rwx------) file withought allowing students to access the other sensitive files in the D107L_exam_scores directory?
